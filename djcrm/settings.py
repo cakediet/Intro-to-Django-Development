@@ -149,7 +149,7 @@ if not DEBUG:
     SECURE_HSTS_PRELOAD = True
     X_FRAME_OPTIONS = "DENY"
 
-    ALLOWED_HOSTS = ["*"]
+    ALLOWED_HOSTS = ["https://cliendex-w4md7.ondigitalocean.app/", "*"]
     
     EMAIL_HOST = 'smtp.mailgun.org'
     
