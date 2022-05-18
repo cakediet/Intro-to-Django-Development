@@ -15,7 +15,7 @@ SECRET_KEY = env('SECRET_KEY')
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -149,7 +149,7 @@ if not DEBUG:
     SECURE_HSTS_PRELOAD = True
     X_FRAME_OPTIONS = "DENY"
 
-    ALLOWED_HOSTS = ["https://cliendex-w4md7.ondigitalocean.app/", "*"]
+    ALLOWED_HOSTS = ["*"]
     
     EMAIL_HOST = 'smtp.mailgun.org'
     
